@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 2</title>
+</head>
+<body>
+    <h1 title="lezione 2 - titolo" id="title-h1" class="ifts-h1-2022">Lezione 2</h1>
+    <section id="sect-sara">
+        <h2 id="sara" class="ifts-2022">Sono Sara</h2>
+        <p>Abito a Cattolica e mi piace il <strong>gelato</strong> </p>
+        <p>Ho un cane di nome Ponchy<p>
+    </section> <!-- fine scetion sara -->
+    <section id="sect-davide">
+        <h2 id="davide" class="ifts-2022">Sono Davide</h2>
+        <p>Abito a Rimini e mi piace la <strong>maionese</strong> </p>
+        <address>via Verdi n.15</address>
+        <div>vicino a casa mia c'è un Parco con <del>le altalene</del><ins>gli scivoli</ins>  </div>
+    </section>
+    <section id="sect-enea">
+        <h2 id="enea" class="ifts-2022">Sono Enea</h2>
+        <p style="color:#01af017e">Abito a Santarcangelo e mi piace la pizza</p>
+        <p>Mi piace fare sport, 
+            <br>  gioco a <b>calcio</b> </p>
+        <p>Vorrei imparare il <abbr title="cascading style sheet">CSS</abbr></p>
+        <span>quando ho sete bevo H<sub>2</sub>O</span>
+        <span>mi piace 
+            il 
+            marchio Eventi<sup>2</sup></span>
+        <br>
+        <code>il tag sup mette un valore ad apice</code>
+    </section>
+    <section id="filippo">
+        <pre>
+            8 spazi a dx
+    allineato a colonna sinistra e a capo
+                12 spazi a dx e a capo
+        </pre>
+        <div>
+            per realizzare un tag div devo scrivere &lt;div&gt;
+            &ge; &le; &raquo; &laquo; &copy; &reg;
+        </div>
+    </section>
+    <section id="luca">
+        <p>parliamo di elenchi, esistono quelli ol ul dl</p>
+        <ul style="list-style-type:square">
+            <li>ul = lista non ordinata</li>
+            <li>ol = lista ordinata</li>
+            <li>dl = lista di definizione</li>
+        </ul>
+        <p>oggi ho fatto tante cose:</p>   
+        <ol>
+            <li>mi sono alzato alle 6.30</li>
+            <li>ho fatto colazione</li>
+            <li>sono andato a lezione all'ENAIP</li>
+            <li>ho pranzato
+                <ul>
+                    <li>Insalata Caprese</li>
+                    <li>Petto di pollo</li>
+                    <li><h4>Caffè</h4>
+                        <ol>
+                            <li>Tazzina</li>
+                            <li>Polvere</li>
+                            <li>Macchina Espresso</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>...</li>
+        </ol>
+        <p>Claudio Rossi docente di fondamenti, mi ha parlato di:</p>
+        <dl>
+            <dt>App Ibride</dt>
+            <dd>sono delle app dove il codice è multipiattaforma</dd>
+            <dt>Controllo di versione</dt>
+            <dd>è importante avere informazioni sulla versione e l'autore di una modifica</dd>
+            <dt>Ciclo del Software</dt>
+            <dd>Il software viene sviluppato, consegnato, <mark>manutenuto</mark> ecc...</dd>
+        </dl>
+
+    </section>
+    <section id="prima-tabella">
+        <table border="1" style="width:300px">
+            <caption>Tabella ingredienti kinder cereali 100g</caption> <!--facoltativo-->
+            <colgroup>
+                <col span="1" style="background-color: aquamarine;">
+            </colgroup>
+            <thead>
+                <th>Ingrediente</th>
+                <th>%</th>
+                <th>Qta</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cioccolato</td>
+                    <td>33%</td>
+                    <td>25g</td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                    <td>12%</td>
+                    <td>
+                        <table border="1" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>in polvere</td>
+                                <td>3g</td>
+                            </tr>
+                            <tr>
+                                <td>parz. scremato</td>
+                                <td>5ml</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">burro di cacao</td>
+                    <td>2%</td>
+                    <td>4g</td>
+                </tr>
+                <tr>
+                    <td>6%</td>
+                    <td>8g</td>
+                </tr>
+                <tr>
+                    <td colspan="3">può contenere tracce di frutta secca</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td>Totale:</td>
+                        <td>47%</td>
+                        <td>32g</td>
+                    </tr>
+                </tfoot>
+            </tbody>
+        </table>
+    </section>
+    <section id="esercizi">
+        <ul>
+            <li>
+                <a href="extabella.html">Vai a esercizio tabella</a>
+            </li>
+            <li>
+                <a href="./extabella.html">Vai a esercizio tabella</a>
+            </li>
+            <li>
+                <a href="esercizi/extabella2.html">Vai a esercizio tabella 2</a>
+            </li>
+        </ul>
+    </section>
+    <section id="utility">
+        <ul>
+            <li>
+                <a href="https://www.w3schools.com/html/html_links.asp">W3School</a>
+            </li>
+            <li>
+                <a href="https://www.google.it">Google</a>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
