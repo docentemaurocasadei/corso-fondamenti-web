@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 5</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="inviaDati.php" method="GET">
+        <fieldset>
+            <legend>Dati di contatto</legend>
+            <label for="txtCognome">Cognome</label>
+            <input type="text" name="txtCognome" id="txtCognome" placeholder="inserisci il cognome">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="txtCodiceFiscale">Codice Fiscale:</label>
+            <input type="text" name="txtCodiceFiscale" id="txtCodiceFiscale" pattern="[A-Z]{6}[\d]{2}[A-M][\d]{2}[A-Z0-9]{4}[A-Z]">
+            <label for="txtTelefono">Telefono:</label>
+            <input type="tel" name="txtTelefono" id="txtTelefono">
+            <label for="txtUrl">Sito Web:</label>
+            <input type="url" name="txtUrl" id="txtUrl">
+            <label for="dataIscrizione" hidden>Data Iscrizione:</label>
+            <input type="date" name="dataIscrizione" id="dataIscrizione" hidden>
+            <label for="rngGiudizio">Lascia il tuo voto</label>
+            <input type="range" name="rngGiudizio" id="rngGiudizio">
+            <label for="mdrPreferito" contenteditable="true">Scegli il MdR:</label>
+            <input list="mdrPreferito">
+            <datalist id="mdrPreferito">
+                <option value="google">google</option>
+                <option value="bing">bing</option>
+                <option value="yahoo">yahoo</option>
+                <option value="yandex">yandex</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Titolo di studio</legend>
+            <input type="radio" name="radTitoloDiStudio" id="licenzaMedia">
+            <label for="licenzaMedia">Licenza Media</label>
+            <input type="radio" name="radTitoloDiStudio" id="diplomaMaturita">
+            <label for="diplomaMaturita">Diploma Maturità</label>
+            <input type="radio" name="radTitoloDiStudio" id="diplomaIts">
+            <label for="diplomaIts">Diploma ITS</label>
+            <input type="radio" name="radTitoloDiStudio" id="laureaTriennale">
+            <label for="laureaTriennale">Laurea Triennale</label>
+            <input type="radio" name="radTitoloDiStudio" id="laureaMagistrale">
+            <label for="laureaMagistrale">Laurea Magistrale</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dati di Residenza</legend>
+            <label for="txtCap">Cap:</label>
+            <input type="text" name="txtCap" id="txtCap" pattern="[\d]{5}" required>
+            <label for="numEta">Età:</label>
+            <input type="number" name="numEta" id="numEta" min="18" max="99" step="1">
+        </fieldset>
+        <textarea name="commento" id="commento" cols="90" rows="5">consegnare al 2 piano</textarea>
+        <section id="pulsanti">
+            <button type="submit">Invia Dati</button>
+            <input type="reset" value="Reimposta Dati">
+        </section>
+    </form>
+</body>
+</html>
