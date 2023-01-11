@@ -1,0 +1,278 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verifica Html</title>
+    <style>
+        body{
+            margin: 2;
+        }
+        code{
+            font-style: italic;
+            font-size:12px;
+            display: block;
+            color:darkmagenta;
+        }
+        code::before{
+            content:"_____"
+        }
+        table{
+            overflow: auto;
+            width: 100%;
+            table-layout: fixed;
+        }
+        table,tr,td{
+            border:1px solid black;
+            border-spacing: 0px;
+        }
+        tfoot{
+            background-color: aqua;
+        }
+        thead{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <hgroup>
+        <h1>HTML5 (h1)</h1>
+        <h2>Verifica Tag e Form</h2>
+    </hgroup>
+    <code>Suggerimento: HTML5 è un h1, verifica tag e form è un h2, sono contenuti in un hgroup</code>
+    <code>inserire un menù con # per richiamo dei varii titolo</code>
+    <h2 id="sommario">Sommario (h2)</h2>
+    <ul>
+        <li>
+            <a href="#sommario">Sommario</a>
+        </li>
+        <li>
+            <a href="#tabella">Tabella</a>
+        </li>
+        <li>
+            <a href="#form">Form</a>
+        </li>
+        <li>
+            <a href="#html5tag">HTML5 Tag Semantici</a>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="tabella">Sezione 1: Tabella(h2)</h2>
+    <table style="border:1px solid orangered">
+        <caption>
+            <h3>La tabella Nutrizionale (h3)</h3>
+        </caption>
+        <thead>
+            <th>Valori medi</th>
+            <th>Per 100g</th>
+            <th>Per prozione (8,7g)</th>
+            <th>Dettagli</th>
+        </thead>
+        <tbody>
+            <tr style="background-color:#f2f2f2">
+                <td><b>Valore energetico</b></td>
+                <td>
+                    <div>1191 kj</div>
+                    <div>474 kcal</div>
+                </td>
+                <td>
+                    <div>173 kj</div>
+                    <div>41 kcal</div>
+                </td>
+                <td rowspan="3">Sezione 1</td>
+            </tr>
+            <tr>
+                <td>Grassi <br>di cui acidi saturi</td>
+                <td>
+                    <div>18 g</div>
+                    <div>8,8 g</div>
+                </td>
+                <td>
+                    <div>1,6 g</div>
+                    <div>0,8 g</div>
+                </td>
+            </tr>
+            <tr style="background-color:#f2f2f2">
+                <td>Carboidrati <br>di cui zuccheri</td>
+                <td>
+                    <div>70 g</div>
+                    <div>23,5 g</div>
+                </td>
+                <td>
+                    <div>6,1 g</div>
+                    <div>2,0 g</div>
+                </td>
+            </tr>
+            <tr>
+                <td>Proteine</td>
+                <td>
+                    <div>7 g</div>
+                </td>
+                <td>
+                    <div>6,6 g</div>
+                </td>
+                <td rowspan="2">Sezione 2</td>
+            </tr>
+            <tr style="background-color:#f2f2f2">
+                <td>Sale</td>
+                <td>
+                    <div>0,270 g</div>
+                </td>
+                <td>
+                    <div>0,023 g</div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><img src="immagini/facebook-logo.png">
+                facebook.com/sararossinutrizionista</td>
+                <td colspan="2"><a href="https://www.sararossinutrizionista.it">sararossinutrizionista.it</a></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <em>&copy; Dottoressa Nutrizionista Sara Rossi</em>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+            <code>Suggerimento: caption è un h3, valore energetico è grassetto, ci sono le aree thead, tbody e tfoot</code>
+            <code>Suggerimento: colore arancione è un orangered</code>
+            <code>Suggerimento: Per colorare il tr inserire style="background-color:aqua"</code>
+    <hr>
+    <h2 id="form">Sezione 2: Form(h2)</h2>
+    <form action="form.php" method="GET" name="myform">
+        <fieldset>
+            <legend>Dati Anagrafici</legend>
+            <label for="inp-cognome">Cognome:</label>
+            <input type="text" name="inp-cognome" id="inp-cognome" placeholder="inp-cognome" autocomplete="off" autofocus>
+            <label for="inp-nome">Nome:</label>
+            <input type="text" name="inp-nome" id="inp-nome" placeholder="inp-nome" autocomplete="off">
+        </fieldset>
+        <fieldset>
+            <legend>Dati Residenza</legend>
+            <label for="inp-indirizzo">Indirizzo:</label>
+            <input type="text" name="inp-indirizzo" id="inp-indirizzo">
+            <label for="inp-cap">Cap:</label>
+            <input type="text" name="inp-cap" id="inp-cap">
+            <label for="inp-localita">Località:</label>
+            <input type="text" name="inp-localita" id="inp-localita">
+            <label for="inp-provincia">Provincia:</label>
+            <input type="text" name="inp-provincia" id="inp-provincia">
+            <label for="sel-stato">Stato:</label>
+            <select name="sel-stato" id="sel-stato">
+                <optgroup label="Europa">
+                    <option value="IT">Italia</option>
+                    <option value="DE">Germania</option>
+                    <option value="FR">Francia</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="CP">Cina</option>
+                    <option value="T">Thailandia</option>
+                    <option value="J">Jappone</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Dati Contatto</legend>
+            <label for="inp-email">Email:</label>
+            <input type="email" name="inp-email" id="inp-email" required>
+            <label for="inp-telefono">Telefono:</label>
+            <input type="tel" name="inp-telefono" id="inp-telefono" >
+        </fieldset>
+        <fieldset>
+            <legend>Dati Accesso</legend>
+            <label for="inp-email">Email:</label>
+            <input type="text" name="inp-email" id="inp-email" >
+            <label for="inp-password">Password:</label>
+            <input type="password" name="inp-password" id="inp-password">
+            <label for="inp-confermapassword">Conferma Password:</label>
+            <input type="password" name="inp-confermapassword" id="inp-confermapassword">
+        </fieldset>
+        <fieldset>
+            <legend>Dati Personali</legend>
+            <label for="inp-meseanno">Mese + Anno Attuale:</label>
+            <input type="month" name="inp-meseanno" id="inp-meseanno" value="2018-11">
+            <label for="inp-colore">Colore Preferito:</label>
+            <input type="color" name="inp-colore" id="inp-colore" >
+            <label for="inp-eta">Età:</label>
+            <input type="number" name="inp-eta" id="inp-eta"  max=99 min=18>
+            <label for="inp-url">Blog Personale (url):</label>
+            <input type="url" name="inp-url" id="inp-url" >
+        </fieldset>
+        <fieldset>
+            <legend>Dati Gradimento</legend>
+            <label for="inp-voto">Voto:</label>
+            <input type="range" name="inp-voto" id="inp-voto"  min=1 max=10>
+            <label for="inp-sport">Sport Preferito:</label>
+            <input list="mialista">
+            <datalist id="mialista">
+                <option value="Calcio">Calcio</option>
+                <option value="Tennis">Tennis</option>
+                <option value="Basket">Basket</option>
+                <option value="Nuoto">Nuoto</option>
+            </datalist>
+            <label for="inp-commento">Commento:</label>
+            <textarea id="inp-commento" cols=50 rows=5 placeholder="scrivi un commento">
+            </textarea>
+        </fieldset>
+        <input type="hidden" name="" id="hiddenfield">
+        <button type="submit" >Invia</button>
+    </form>
+            <code>Suggerimento: action="form.php" method="GET" name="myform"</code>
+            <code>Suggerimento: i campi cognome e nome hanno un placeholder</code>
+            <code>Il Campo Cognome e Nome non vengono autocompletati</code>
+            <code>Suggerimento: il campo email in dati contatto è obbligatorio</code>
+            <code>Suggerimento: lo stato è una select divisa in gruppi, i valori: Euroma (Italia, Francia, Germania) | Asia (Cina, Thailandia, Jappone)</code>
+            <code>Suggerimento: nei dati Personali ci sono un month e un color e un number</code>
+            <code>Suggerimento: l'età può essere da 18 a 99</code>
+            <code>Suggerimento: il gradimento va da 1 a 10</code>
+            <code>Suggerimento: il campo Sport Preferito è un datalist e propone Calcio, Tennis, Basket, Nuoto</code>
+            <code>Suggerimento la textarea del commento è formata da 50 colonne e 5 righe</code>
+    <hr>
+    <h2 id="html5tag">Sezione 3: Html5 Tag(h2)</h2>
+    <section>
+        <article>
+            <header>
+                <h3>SOCIAL MEDIA E WEB MARKETING MANAGER</h3>
+            </header>
+            <p>
+                La risorsa ricercata si occuperà in completa autonomia di:
+                Gestione del Sito Web e dei Social Network aziendali (LinkedIn, Facebook, Twitter)
+                Creazione dei contenuti web di testo e video in ottica SEO
+                Gestione della comunicazione associativa ed organizzativa (Newsletter, email, inviti, etc.)“
+
+                Potrebbe interessarti: http://www.romatoday.it/annunci/social-media-e-web-marketing-manager-3hkbl.job
+                Seguici su Facebook: http://www.facebook.com/pages/RomaToday/41916963809
+
+            </p>
+            <footer>
+                <details open>
+                    <summary>Approfondimenti</summary>
+                    <ul>
+                        <li>
+                            <a href="https://www.miosito.it/articolo1.html">News 1</a>
+                        </li>
+                        <li>
+                            <a href="https://www.miosito.it/articolo1.html">News 2</a>
+                        </li>
+                    </ul>
+                </details>
+                <small>Autore: Corsista</small>
+            </footer>
+        </article>
+    </section>
+    <code>Suggerimento: è un articolo all'interno di una sezione; ha un header con un h3, un testo, un footer con un tag details con all'interno 2 link esterni (possono puntare alla pagina corrente). l'autore è in un tag small, 
+    <pre>Regole per lo svolgimento:
+        - i suggerimenti (_____Suggerimento) non devono essere scritti nella verifica svolta
+        - la verifica dovrà essere salvata su directory indicata in un file zip nominato con cognome-nome.zip
+        - il file html dovrà essere nominato con cognome-nome.html
+        - il file zip dovrà contenere anche eventuali immagini se necessarie
+    </pre>
+</code>
+
+</body>
+
+</html>
