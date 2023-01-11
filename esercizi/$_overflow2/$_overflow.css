@@ -1,0 +1,19 @@
+*{
+    font-size: 0px;
+    box-sizing: border-box;
+}
+div,p{
+    font-size: 14px;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+.container div{
+    background-color: lightgray;
+    display: inline-block;
+    width: 25%;
+    padding: .5em;
+    overflow: auto;
+    max-height: 150px;
+}

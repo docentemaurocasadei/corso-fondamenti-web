@@ -1,0 +1,20 @@
+<!-- definire un file con un div avente una classe definita nello style interno e un id definito nel css collegato e dimostrare che l'id ha prevalenza sulla classe
+commentare il div e inserire una class anche nel css collegato e dimostrare che ha prevalenza il css interno -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cldiv{
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="cldiv">aaa</div>
+</body>
+</html>

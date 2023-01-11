@@ -1,0 +1,41 @@
+*{
+    font-size: 0px;
+    box-sizing: border-box;
+}
+div,p{
+    font-size: 14px;
+}
+.container{
+    width: 95%;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+#primopiano div{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+}
+#primopiano div div{
+    margin: 1em 0em;
+    border: 1px solid black;
+    width: 100%;
+}
+@media screen and (min-width:768px) {
+    .container{
+        width: 90%;
+        background-color: lightblue;
+    }
+    #primopiano div{
+        width: 50%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .container{
+        width: 80%;
+        background-color: lightgreen;
+    }
+    #primopiano div{
+        width: 25%;
+    }
+}

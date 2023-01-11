@@ -1,0 +1,12 @@
+div,p{
+    font-size: 14px;
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+.container div{
+    background-image: url('https://picsum.photos/1920/1024');
+    background-attachment: fixed;
+    max-height: 300px;
+}
