@@ -33,3 +33,11 @@ article a{
         height: 750px;
     }   
 }
+@media screen and (min-width:1200px) {
+    /*notebook + desktop*/
+    div#myDiv{
+        background-color: brown;
+        width: 1000px;
+        height: 1000px;
+    }   
+}
