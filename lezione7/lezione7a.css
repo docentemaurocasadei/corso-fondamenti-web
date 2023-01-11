@@ -1,0 +1,21 @@
+/*desktop first*/
+
+h2{
+    color: deeppink;
+    font-size: 22px;
+}
+@media screen and (max-width:991px)  {
+    h2{
+        color: chartreuse;
+    }
+}
+@media screen and (max-width:767px)  {
+    h2{
+        color: aqua;
+    }
+}
+@media screen and (max-width:575px)  {
+    h2{
+        color: red;
+    }
+}

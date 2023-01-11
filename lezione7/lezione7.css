@@ -1,0 +1,59 @@
+/* style.css */
+/*questo è un commento*/
+/*Mobile first*/
+*{
+    margin-left: 20px;
+}
+div{
+    margin: 10px;
+}
+h2{
+    font-size: 22px;
+    color:red;
+}
+h3{
+    text-decoration: underline;
+}
+section{
+    font-size: 20px;
+}
+span{
+    color: grey;
+}
+div.primopiano, h3{
+    color: orange !important;
+}
+ul#menu a{ 
+    /* discendenza */
+    color: orangered;
+}
+ul#menu a#home{
+    font-size: 1.5em;
+    color: blueviolet;
+}
+a{
+    color: gray;
+}
+/*...*/
+@media screen and (min-width:576px){
+    /*tablet + smartphone grandi*/
+    h2{
+        color: aqua;
+    }
+}
+@media screen and (min-width:768px) {
+    /*tablet + notebook piccoli*/
+    h2{
+        color: chartreuse;
+    }
+}
+@media screen and (min-width:992px) {
+    /*notebook + desktop*/
+    h2{
+        color: deeppink;
+    }
+    h3{
+        text-decoration: none;
+    }
+}
+
