@@ -1,0 +1,6 @@
+div.testo{
+    width: 80%;
+    background-image: url('image.jpg');
+    background-attachment: fixed;
+    margin: 0 auto;
+}

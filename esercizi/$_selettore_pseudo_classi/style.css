@@ -1,0 +1,10 @@
+div{
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
+@media screen and (min-width:576px) {
+    div::first-line{
+        font-size: large;
+    }
+}

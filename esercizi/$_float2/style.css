@@ -1,0 +1,16 @@
+div.testo{
+    width: 33%;
+    float: left;
+    margin-right: 5px;
+    box-sizing: border-box;
+    padding: 1em;
+}
+div.testo1{
+    background-color: aqua;
+}
+div.testo2{
+    background-color:coral;
+}
+div.testo3{
+    background-color:deepskyblue;
+}
