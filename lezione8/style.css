@@ -1,0 +1,131 @@
+h1{
+    color: lightseagreen;
+}
+section#primopiano > div{
+    border: 1px solid grey;
+    margin: 6px;
+}
+section#primopiano > div div ~ div{
+    color: blueviolet;
+}
+p ~ p{
+    background-color: aquamarine;
+}
+p + p{
+    background-color: coral;
+}
+p + span{
+    background-color: lightseagreen;
+}
+/* body > p{
+    background-color: coral;
+} */
+/*selettori di attributo*/
+#dati-anagrafici input[type="email"]{
+    border: 2px dashed lightgreen;
+}
+#dati-anagrafici label[data-enaip]{
+    color: lightseagreen;
+}
+/*pseudoclassi*/
+section#pseudo-classi > div{
+    width: 150px;
+    height: 150px;
+    border: 1px solid green;
+}
+section#pseudo-classi > div:hover{
+    background-color: aquamarine;
+}
+section#pseudo-classi a:link{
+    color: purple;
+}
+section#pseudo-classi a:hover{
+    color: deeppink;
+}
+section#pseudo-classi a:active{
+    color: pink;
+}
+section#pseudo-classi a:visited{
+    color:cornflowerblue;
+}
+ul#menu li{
+    display: inline;
+    font-size: 2em;
+}
+ul#menu li:first-child{
+    font-size: 2.5em;
+}
+/*pseudoclassi strutturali*/
+/* section#pseudo-classi-strutturali span:nth-child(1),
+section#pseudo-classi-strutturali span:nth-child(5),
+section#pseudo-classi-strutturali span:nth-child(8){
+    background-color: darkmagenta;
+    color: white;
+} */
+
+/* section#pseudo-classi-strutturali span:nth-child(even){
+    background-color: darkblue;
+    color: white;
+}
+ */
+
+/*(4n+2) 
+4=step ovvero l'incremento
+2=start ovvero l'elemento di partenza
+*/
+/* section#pseudo-classi-strutturali span:nth-child(4n+2){
+    background-color: darkblue;
+    color: white;
+}  */
+/* section#pseudo-classi-strutturali span:nth-last-child(3n+2){
+    background-color: magenta;
+    color: white;
+} */
+/* section#pseudo-classi-strutturali :last-child{
+    background-color: darkorange;
+    color: white;
+} */
+.titoli3 h3:empty{
+    border: 1px double red;
+    padding: 10px;
+}
+.evidenza{
+    background-color: chartreuse;
+    border-radius: 3px;
+    padding: 5px;
+}
+span:not(.evidenza){
+    background-color: deeppink;
+    color: white;
+    padding: 5px;
+}
+input:enabled{
+    border: 1px solid blue;
+}
+input:disabled{
+    border: 1px solid darkgreen;
+    display: none;
+}
+input:disabled + label{
+    display: none;
+}
+input:checked{
+    margin-left: 15px;
+    accent-color: red;
+}
+/* pseudo elementi*/
+#editoriale p::first-letter{
+    font-size: 5em;
+}
+#editoriale p::first-line{
+    color: goldenrod;
+}
+input:checked::before{
+    content: "(selezionato)";
+}
+/*
+box model
+padding
+border
+margin
+*/

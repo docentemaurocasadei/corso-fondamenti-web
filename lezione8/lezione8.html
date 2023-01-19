@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 8</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <h1>Lezione 8</h1>
+    <section id="primopiano">
+        <div>primo</div>
+        <div>
+            <div>secondo .1</div>
+            <div>secondo .2</div>
+        </div>
+        <div class="evidenza">terzo</div>
+    </section>
+    <span>ciao 1</span>
+    <p>primo paragrafo</p>
+    <p>secondo paragrafo</p>
+    <span>ciao 2</span>
+    <span>ciao 3</span>
+    <p>terzo paragrafo</p>
+    
+    <section id="dati-anagrafici">
+        <form action="invia-dati.php">
+            <label for="nome" data-enaip="colora">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="cognome" data-enaip="colora">Cognome</label>
+            <input type="text" name="cognome" id="cognome">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="username" data-enaip="evidenzia">Username</label>
+            <input type="text" name="username" id="username">
+            <fieldset>
+                <legend>Dati di Residenza</legend>
+                <label for="indirizzo">Indirizzo:</label>
+                <input type="text" name="indirizzo" id="indirizzo">
+                <label for="cap">Cap:</label>
+                <input type="text" name="cap" id="cap">
+                <label for="localita">Località:</label>
+                <input type="text" name="localita" id="localita">
+                <input type="text" name="provincia" id="provincia" disabled>
+                <label for="provincia">Provincia:</label>
+            </fieldset>
+            <fieldset>
+                <legend>Hobbies</legend>
+                <input type="checkbox" name="calcio" id="calcio">Calcio
+                <input type="checkbox" name="tennis" id="tennis">Tennis
+                <input type="checkbox" name="volley" id="volley">Volley
+                <input type="checkbox" name="cinema" id="cinema">Cinema
+            </fieldset>
+        </form>
+    </section>
+    <section id="pseudo-classi">
+        <div>test pseudo-classi</div>
+        <a href="#primopiano">primopiano</a>
+        <a href="#dati-anagrafici">dati-anagrafici</a>
+        <a href="#pseudo-classi">pseudo-classi</a>
+        <a>senza href</a>
+    </section>  
+    <nav>
+        <ul id="menu">
+            <li class="evidenza">Home</li>
+            <li>Chi Siamo</li>
+            <li>Servizi</li>
+            <li>Contatti</li>
+        </ul>  
+    </nav>
+    <section id="pseudo-classi-strutturali">
+        <span class="evidenza">primo</span>
+        <span>secondo</span>
+        <span>terzo</span>
+        <span>quarto</span>
+        <span class="evidenza">quinto</span>
+        <span>sesto</span>
+        <span>settimo</span>
+        <span class="evidenza">ottavo</span>
+        <span>nono</span>
+        <span>decimo</span>
+    </section>
+    <section class="titoli3">
+        <h3>primo</h3>
+        <h3 contenteditable=""></h3>
+        <h3>terzo</h3>
+    </section>
+    <hr>
+    <a href="#evidenza">evidenza</a>
+    <section id="editoriale">
+        <article>
+            <h3>Articolo del direttore</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a enim, nostrum cupiditate quibusdam explicabo harum fugit soluta praesentium voluptates ducimus neque autem mollitia commodi, illum beatae, voluptatum hic officiis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi quo magnam exercitationem sint! Earum non soluta vel at facere quia, laborum corporis officia praesentium ex placeat corrupti mollitia natus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusantium, nisi quis alias rem quam necessitatibus id delectus quae. Odio, sint quisquam quia veniam ratione autem ab atque eligendi ad?
+            </p>
+        </article>
+    </section>
+</body>
+</html>
