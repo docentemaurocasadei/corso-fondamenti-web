@@ -1,0 +1,102 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+nav#menu{
+    background-color: #0277BD;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+nav#menu ul{
+    display: flex;
+    flex-direction: column;
+}
+nav#menu ul li{
+    padding: 2px 0;
+}
+nav#menu a{
+    color: white;
+}
+section#slider{
+    height: 180px;
+    background-image: url(./banner.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 2px;
+}
+.container{
+    width: 90%;
+    margin: 10px auto;
+}
+section#azienda{
+    display: flex;
+    flex-direction: column;
+}
+#immagini-azienda{
+    margin-top: 10px;
+}
+#immagini-azienda img{
+    width: 100%;
+}
+.img-thumbnail{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px;
+}
+#servizi h2{
+    text-align: center;
+}
+#lista-servizi{
+    display: flex;
+    flex-direction: column;
+}
+.bordo-goccia{
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    border-color: white;
+}
+#servizi{
+    background-color: #0288D1;
+    padding: 20px 0;
+    color: white;
+}
+@media screen and (min-width:576px) {
+    nav#menu ul{
+        flex-direction: row;
+    }
+    nav#menu ul li{
+        padding: 0 10px;
+    }
+    .container{
+        width: 80%;
+    }
+    section#azienda{
+        display: flex;
+        flex-direction: row;
+    }
+    section#azienda > div{
+        width: 50%;
+    }
+    #immagini-azienda{
+        padding: 20px;
+    }
+    #immagini-azienda{
+        margin-top: 0;
+    }
+    #lista-servizi{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #lista-servizi > div{
+        width: 30%;
+    }    
+    #lista-servizi > div > h4{
+        min-height: 50px;
+    }    
+    .bordo-goccia{
+        margin: 0 10px;
+    }
+}

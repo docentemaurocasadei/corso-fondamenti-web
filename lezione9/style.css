@@ -1,0 +1,64 @@
+section#articoli{
+    display: flex;
+    flex-direction: column;
+}
+section#articoli > div{
+    width: 33%;
+    height: 80px;
+    border-width:thin;
+    border-style: solid;
+    /* border-top-color: red;
+    border-bottom-color: cadetblue; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 30px;
+    background-color: cadetblue;
+    color: white;
+}
+input[type="text"] {
+    outline-color: red;
+}
+img{
+    border-radius: 50%;
+    border: 1px solid rgb(0,0,0,0.8);
+    padding: 5px;
+}
+input#calcio{
+    accent-color: rgb(48, 131, 59);
+}
+input#tennis{
+    accent-color: rgb(49, 48, 131);
+}
+input#volley{
+    accent-color: rgb(170, 97, 49);
+}
+section#mission{
+    height: 200px;
+    background-image: url('./gatto.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+    /* background-position: top; */
+    border: 1px solid black;
+    background-size: cover;
+    /* background-color: black; */
+}
+section#mission h2{
+    padding: 80px;
+    font-size: 32px;
+}
+section#riferimenti{
+    margin: 2em auto;
+}
+section#riferimenti div{
+    border: 1px solid black;
+    padding: 1em;
+    display: inline-block;
+    width: 200px;
+}
+form{
+    /* display: none; */
+    visibility: visible;
+}
