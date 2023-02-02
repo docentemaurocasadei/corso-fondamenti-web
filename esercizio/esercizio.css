@@ -1,0 +1,65 @@
+nav {
+    background-color: blue;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+}
+section#sezione{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+div#immagine{
+    background-image: url(./ritratto.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px;
+}
+article{
+    text-align: center;
+
+}
+article h2{
+    background-color: green;
+    color: white;
+    
+}
+h1 {
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+}
+section#titolo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+   
+}
+h1, h2 {
+    padding: 3px;
+}
+@media screen and (min-width:576px){
+    section#sezione{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        
+    }
+    section img{
+        
+    }
+    article{
+        text-align: left;
+    }
+    section article{
+        max-width: 48%;
+    }
+    div#immagine{
+        width: 48%;
+
+    }
+}
