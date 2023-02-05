@@ -1,0 +1,15 @@
+div{
+    border-style: dashed;
+    border-width: thick;
+    border-top-color: blueviolet;
+    background-color: dodgerblue;
+    border-top-left-radius: 15px; 
+    min-height: 50px;
+    min-width: 300px;
+    display: inline-block;
+    margin: 1em 0;
+}
+input[type="email"]{
+    outline: 0px;
+    display: block;
+}

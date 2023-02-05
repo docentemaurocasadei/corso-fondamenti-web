@@ -1,0 +1,16 @@
+div{
+    border: 1px solid black;
+    margin: 1em;
+    background-color: dodgerblue;
+    min-height: 50px;
+    display: inline-block;
+}
+#minw300{
+    min-width: 300px;
+}
+#w300{
+    width: 300px;
+}
+#maxw300{
+    max-width: 300px;
+}
