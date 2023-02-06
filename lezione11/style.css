@@ -1,0 +1,31 @@
+section#notizie div{
+
+}
+section#notizie div:nth-child(1){
+    background-color: coral;
+}
+section#notizie div:nth-child(2){
+    background-color: rgb(155, 76, 48);
+}
+section#notizie div:nth-child(3){
+    background-color: rgb(83, 34, 16);
+}
+section#notizie div:nth-child(4){
+    background-color: rgb(48, 19, 9);
+}
+#width-bootstrap div{
+    /* background-color: #eee; */
+}
+/* #flexbox{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:576px) {
+    #flexbox{
+        flex-direction: row;
+    }
+} */
+#flexbox div{
+    min-width: 33%;
+}
